@@ -1,0 +1,12 @@
+-- CreateTable
+CREATE TABLE "Nft" (
+    "id" INTEGER NOT NULL PRIMARY KEY AUTOINCREMENT,
+    "title" TEXT NOT NULL,
+    "description" TEXT NOT NULL
+);
+
+-- CreateTable
+CREATE TABLE "XApiKey" (
+    "id" INTEGER NOT NULL PRIMARY KEY AUTOINCREMENT,
+    "Key" TEXT NOT NULL
+);
