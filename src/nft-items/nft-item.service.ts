@@ -1,7 +1,6 @@
 import {  Injectable } from "@nestjs/common";
-type requestGetItem = {
-    title:string
-}
+import { RequestGetItemDto } from "./dto/get-item.dto"; // Import the DTO
+
 const nftData = [
     {
       title: "Sunset Serenity",
@@ -50,7 +49,7 @@ const nftData = [
 
 @Injectable()
 export class ApiService{
-    findItem(data:requestGetItem):object{
+    findItem(data:RequestGetItemDto):object{
         const item =  nftData.find(item => item.title === data.title)
         return item
     }

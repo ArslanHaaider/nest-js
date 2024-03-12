@@ -1,6 +1,6 @@
 import { Module } from "@nestjs/common";
-import { ApiService } from "./api.service";
-import { ApiController } from "./api.controller";
+import { ApiService } from "./nft-item.service";
+import { ApiController } from "./nft-item.controller";
 
 @Module({
     providers:[ApiService],
